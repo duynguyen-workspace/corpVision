@@ -22,25 +22,29 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
-    <!-- CSS -->
+    <!-- Icon CSS: moon & sun -->
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/moon.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/sun.css' rel='stylesheet'>
+
+    <!-- Custom css -->
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
 
-<body>
+<body id="corpBody">
     <!-- Header -->
     <header class="corpHeader">
         <div class="container">
-            <nav class="corpNavbar navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="corpNavbar__logo navbar-brand" href="#">
                     <i class="fa fa-align-right text-success mr-1"></i>Corp Vision
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#corpNavbarResponsive" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#corpNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 
-                <div class="collapse navbar-collapse" id="#corpNavbarResponsive">
-                    <ul class="navbar-nav mr-auto">
+                <div class="collapse navbar-collapse" id="corpNavbar">
+                    <ul class="navbar-nav mr-auto mx-lg-auto">
                         <li class="nav-item active">
                             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                         </li>
@@ -65,8 +69,9 @@
                     </ul>
                     <button class="corpSearchBtn mr-3"><i class="fa fa-search icon-material-search"></i></button>
                     <button class="corpThemeBtn" id="switchButton">
-                        <i class="far fa-moon"></i>
-                        <i class="far fa-sun"></i>
+                        <i class="gg-moon"></i>
+                        <i class="gg-sun"></i>
+                        <!-- <i class="far fa-sun"></i> -->
                     </button>
                 </div>
             </nav>
@@ -102,6 +107,9 @@
 
     <!-- Footer -->
     <footer class="corpFooter"></footer>
+
+    <!-- Switch light & dark themes scripts -->
+    <script src="./js/changeTheme.js"></script>
 
     <!-- Bootstrap bundles and JQuery scripts -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"

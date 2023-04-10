@@ -1,3 +1,7 @@
+/* Import CSS */
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/moon.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/sun.css');
+
 * {
     margin: 0;
     padding: 0;
@@ -68,9 +72,8 @@ body {
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
 }
 
-.corpNavbar {
-    display: flex;
-    justify-content: space-between;
+.corpHeader .navbar {
+    padding: 0;
 }
 
 .corpNavbar__logo {
@@ -90,17 +93,20 @@ body {
     opacity: 0.9;
 }
 
-.nav-link {
+#corpNavbar .nav-item {
+    padding: 14px 0 10px;
+}
+
+#corpNavbar .nav-item .nav-link {
     text-transform: uppercase;
     font-size: 15px;
     font-weight: 600; 
-    padding: 14px 0 10px;
     color: #3f3a64;
     opacity: 0.7;
 }
 
-.nav-link:hover, .nav-link:focus{
-    
+#corpNavbar .nav-item.active .nav-link {
+    color: #009f4d;
 }
 
 .dropdown-item {
@@ -132,18 +138,45 @@ body {
 .corpThemeBtn {
     height: 45px;
     width: 45px;
+    font-size: 30px;
     line-height: 45px;
     text-align: center;
     border-radius: 100%;
-    color: #ffffff;
-    background-color: #009f4d;
+    color: #3f3a64;
+    background-color: transparent;
+    opacity: 0.9;
     outline: 0;
     transform-origin: 50%;
     transition: all 0.7;
     border: none;
 }
 
-/* 
-.nav-item.active .nav-link {
-    color: #009f4d;
-} */
+/* Light theme */
+#corpBody {
+    background-color: #ffffff;
+    transition: all 500ms;
+}
+
+#switchButton .gg-sun {
+    display: none;
+    
+}
+
+#switchButton .gg-moon {
+    display: block;
+}
+
+/* Dark theme */
+
+.dark#corpBody {
+    background-color: #000000;
+}  
+
+.dark #switchButton .gg-moon {
+    display: none;
+}
+
+.dark #switchButton .gg-sun {
+    display: block;
+    color: #eee;
+}
