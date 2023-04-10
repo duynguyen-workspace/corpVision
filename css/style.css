@@ -12,3 +12,48 @@ body {
     font-family: 'Jost', sans-serif;
 }
 
+/* Universal Classes */
+
+.btn {
+    color: #ffffff;
+    background-color: #00a63f;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 15px 50px;
+    line-height: 18px;
+    border-radius: 8px;
+    border: 1px solid #00a63f;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+.btn:hover {
+    color: #ffffff;
+    background-color: #008030;
+    border-color: #00732c;
+}
+
+.title span {
+    display: block;
+    text-transform: uppercase;
+    color: #7e7d7d;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+.title h2 {
+    color: #3f3a64;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+.title p {
+    font-size: 17px;
+    color: #666;
+    line-height: 27px;
+    opacity: 0.8;
+}
