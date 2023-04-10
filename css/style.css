@@ -57,3 +57,93 @@ body {
     line-height: 27px;
     opacity: 0.8;
 }
+
+.container {
+    max-width: 1200px;
+}
+
+/* HEADER */
+.corpHeader {
+    /* height: 80px; */
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+}
+
+.corpNavbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.corpNavbar__logo {
+    font-size: 30px;
+    font-weight: 600;
+    color: #3f3a64 !important;
+}
+
+.corpNavbar__logo::after {
+    content: "Vision to your Future";
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    position: relative;
+    padding-left: 46px;
+    top: -5px;
+    opacity: 0.9;
+}
+
+.nav-link {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600; 
+    padding: 14px 0 10px;
+    color: #3f3a64;
+    opacity: 0.7;
+}
+
+.nav-link:hover, .nav-link:focus{
+    
+}
+
+.dropdown-item {
+    text-transform: uppercase;
+    font-weight: 600; 
+    color: #3f3a64;
+    opacity: 0.7;
+}
+
+.dropdown-item:hover {
+    color: #3f3a64;
+    background-color: transparent;
+}
+
+.corpSearchBtn {
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 100%;
+    color: #ffffff;
+    background-color: #009f4d;
+    outline: 0;
+    transform-origin: 50%;
+    transition: all 0.7;
+    border: none;
+}
+
+.corpThemeBtn {
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 100%;
+    color: #ffffff;
+    background-color: #009f4d;
+    outline: 0;
+    transform-origin: 50%;
+    transition: all 0.7;
+    border: none;
+}
+
+/* 
+.nav-item.active .nav-link {
+    color: #009f4d;
+} */

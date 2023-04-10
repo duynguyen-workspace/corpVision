@@ -29,7 +29,49 @@
 
 <body>
     <!-- Header -->
-    <header class="corpHeader"></header>
+    <header class="corpHeader">
+        <div class="container">
+            <nav class="corpNavbar navbar navbar-expand-lg navbar-light bg-light">
+                <a class="corpNavbar__logo navbar-brand" href="#">
+                    <i class="fa fa-align-right text-success mr-1"></i>Corp Vision
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#corpNavbarResponsive" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="#corpNavbarResponsive">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">Pages</a>
+                            <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Blog Post</a>
+                            <a class="dropdown-item" href="#">404 Page</a>
+                            <a class="dropdown-item" href="#">Landing Page</a>
+                            <a class="dropdown-item" href="#">Elements Page</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                    <button class="corpSearchBtn mr-3"><i class="fa fa-search icon-material-search"></i></button>
+                    <button class="corpThemeBtn" id="switchButton">
+                        <i class="far fa-moon"></i>
+                        <i class="far fa-sun"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
 
     <!-- Carousel -->
     <section class="corpCarousel"></section>
