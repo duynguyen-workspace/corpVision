@@ -13,6 +13,7 @@ html {
 }
 
 body {
+    height: 4000px;
     font-family: 'Jost', sans-serif;
 }
 
@@ -68,8 +69,12 @@ body {
 
 /* HEADER */
 .corpHeader {
-    /* height: 80px; */
-    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(231, 231, 231, 0.18);
+    z-index: 10;
+    transition: all 400ms ease 0s;
 }
 
 .corpHeader .navbar {
@@ -79,7 +84,7 @@ body {
 .corpNavbar__logo {
     font-size: 30px;
     font-weight: 600;
-    color: #3f3a64 !important;
+    color: #fff !important;
 }
 
 .corpNavbar__logo::after {
@@ -101,12 +106,12 @@ body {
     text-transform: uppercase;
     font-size: 15px;
     font-weight: 600; 
-    color: #3f3a64;
+    color: #fff;
     opacity: 0.7;
 }
 
 #corpNavbar .nav-item.active .nav-link {
-    color: #009f4d;
+    color: #ffffff;
 }
 
 .dropdown-item {
@@ -142,13 +147,37 @@ body {
     line-height: 45px;
     text-align: center;
     border-radius: 100%;
-    color: #3f3a64;
+    color: #ffffff;
     background-color: transparent;
     opacity: 0.9;
     outline: 0;
     transform-origin: 50%;
     transition: all 0.7;
     border: none;
+}
+
+/* HEADER ON SCROLL */
+#corpHeader.headerScroll {
+    height: 80px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+    border-bottom: none;
+    background-color: #ffffff;
+}
+
+#corpHeader.headerScroll .corpNavbar__logo {
+    color: #3f3a64 !important;
+}
+
+#corpHeader.headerScroll #corpNavbar .nav-item .nav-link {
+    color: #3f3a64 !important;
+}
+
+#corpHeader.headerScroll #corpNavbar .nav-item.active .nav-link {
+    color: #009f4d !important;
+}
+
+#corpHeader.headerScroll .corpThemeBtn {
+    color: #3f3a64 !important;
 }
 
 /* Light theme */

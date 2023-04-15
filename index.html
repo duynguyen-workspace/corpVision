@@ -33,7 +33,7 @@
 
 <body id="corpBody">
     <!-- Header -->
-    <header class="corpHeader">
+    <header class="corpHeader fixed-top" id="corpHeader">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="corpNavbar__logo navbar-brand" href="#">
@@ -74,6 +74,13 @@
                         <!-- <i class="far fa-sun"></i> -->
                     </button>
                 </div>
+                <!-- Search
+                <div class="corpSearch">
+                    <i class="icon-close fa fa-close material-icons"></i>
+                    <form action="" method="GET" class="corpSearch__form">
+                        <input class="corpSearch__input" type="text" placeholder="Start Typing">
+                    </form>
+                </div> -->
             </nav>
         </div>
     </header>
@@ -107,6 +114,9 @@
 
     <!-- Footer -->
     <footer class="corpFooter"></footer>
+
+    <!-- Header on scroll scripts -->
+    <script src="./js/headerOnScroll.js"></script>
 
     <!-- Switch light & dark themes scripts -->
     <script src="./js/changeTheme.js"></script>
