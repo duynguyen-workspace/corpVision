@@ -111,7 +111,7 @@ p {
 
 }
 
-.call-grids-w3 {
+.grids__item {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 25px;
@@ -134,7 +134,7 @@ p {
     -webkit-transition: .3s ease;
 }
 
-.box-wrap h4 a {
+.box__wrap h4 a {
     font-size: 22px;
     line-height: 28px;
     font-weight: 600;
@@ -154,13 +154,13 @@ p {
 
 }
 
-.box-wrap {
+.box__wrap {
     transform: translateY(0);
     transition: all .5s;
 
 }
 
-.box-wrap:hover {
+.box__wrap:hover {
     transform: translateY(-5px);
     box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.1);
 }
@@ -221,6 +221,100 @@ p {
 
 /*! Gallery */
 
+.corpGallery {
+    background-color: #f8f9fa;
+}
+
+.gal__item {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.gal__item a {
+    overflow: hidden;
+}
+
+.gal__item a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(29, 42, 55, 0.7);
+    transition: all 0.3s;
+    opacity: 0;
+    z-index: 1;
+}
+
+.gal__item a:hover::before {
+    opacity: 1;
+}
+
+.gal__item img {
+    max-width: 100%;
+    transition: all 0.3s;
+}
+
+.gal__item a:hover img {
+    overflow: hidden;
+    transform: scale(1.1);
+}
+
+.gal__item .hover-content {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+    padding: 46px 50px;
+    color: #ffffff;
+    z-index: 2;
+}
+
+.gal__item a:hover .hover-content {
+    opacity: 1;
+    bottom: 0;
+}
+
+.corpGallery .overlay__hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(29, 42, 55, 0.7);
+    transition: all 0.3s;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+}
+
+.gal__item .title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.gal__item .content {
+    font-size: 18px;
+    color: #eee;
+    display: block;
+}
+
+.company-logo {
+    border-top: 1px solid #eee;
+}
+
+.company-logo img {
+    padding: 0 18px;
+}
 
 
 
@@ -284,5 +378,11 @@ mt-lg-5 {
 @media (min-width: 1200px) {
     .container {
         max-width: 1140px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+    max-width: 1200px;
     }
 }
