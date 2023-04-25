@@ -62,15 +62,11 @@ body {
     max-width: 1200px;
 }
 
-/*! About */
-
-p {
-    margin: 0;
-    padding: 0;
-    font-size: 17px;
-    line-height: 27px;
-    color: #666;
-    opacity: .8;
+.title-big {
+    font-size: 35px;
+    line-height: 45px;
+    font-weight: 700;
+    color: #3f3a64;
 }
 
 .title-small {
@@ -83,11 +79,15 @@ p {
     display: block;
 }
 
-.title-big {
-    font-size: 35px;
-    line-height: 45px;
-    font-weight: 700;
-    color: #3f3a64;
+/*! About */
+
+p {
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+    line-height: 27px;
+    color: #666;    
+    opacity: .8;
 }
 
 .w3l-homeblock1 ul.service-list li a span.fa {
@@ -185,9 +185,57 @@ p {
 } 
 /*! Services */
 
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
 
+.services__item img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
 
+.services__info {
+    padding: 0 20px;
+}
 
+.services__info a.title {
+    font-size: 19px;
+    line-height: 28px;
+    font-weight: 600;
+    color: #3f3a64;
+    text-align: center;
+    background: #fff;
+    padding: 12px 35px;
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transform: translateY(-25px);
+    box-shadow: rgba(1, 1, 1, 0.05) 1px 1px 5px 0px;
+    text-decoration: none;
+}
+
+.services__info:hover a.title {
+    color: #009f4d;
+}
+
+.services__info .detail {
+    margin: -10px 10px 0 10px;    
+}
+
+.btn-style1{
+    color: #3f3a64;
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+.btn-style1:hover {
+    color: #008030;
+    background-color: transparent;
+    border-color: transparent;
+}
 /*! Gallery */
 
 
@@ -205,7 +253,7 @@ p {
 
 
 @media (min-width: 992px) .pr-lg-5,
-.px-lg-5 {
+.px-lg-5, mt-lg-5 {
     padding-right: 3rem !important;
 }
 
