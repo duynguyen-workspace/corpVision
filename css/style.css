@@ -40,13 +40,13 @@ p {
     display: block;
 }
 
-.w3l-homeblock1 ul.service-list li a span.fa {
+.corpAbout ul.service__list li a span.fa {
     color: #009f4d;
     margin-right: 5px;
     opacity: .8;
 }
 
-.w3l-homeblock1 ul.service-list li a {
+.corpAbout ul.service__list li a {
     font-size: 18px;
     line-height: 28px;
     font-weight: 600;
