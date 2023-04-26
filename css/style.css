@@ -32,8 +32,6 @@ body {
     cursor: pointer;
     transition: all 500ms;
 }
-<<<<<<< HEAD
-=======
 
 .btn:hover {
     color: #ffffff;
@@ -62,44 +60,6 @@ body {
     font-size: 17px;
     color: #666;
     line-height: 27px;
-    opacity: 0.8;
-}
-
-.container {
-    max-width: 1200px;
-}
-
-/*! About */
->>>>>>> main
-
-.btn:hover {
-    color: #ffffff;
-    background-color: #008030;
-    border-color: #00732c;
-}
-
-.title span {
-    display: block;
-    text-transform: uppercase;
-    color: #7e7d7d;
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    line-height: 30px;
-}
-
-.title h2 {
-    color: #3f3a64;
-    font-size: 35px;
-    font-weight: 700;
-    line-height: 45px;
-}
-
-.title p {
-    font-size: 17px;
-    color: #666;
-    line-height: 27px;
-<<<<<<< HEAD
     opacity: 0.8;
 }
 
@@ -120,10 +80,8 @@ body {
     line-height: 45px;
     font-weight: 700;
     color: #3f3a64;
-=======
     color: #666;
     opacity: .8;
->>>>>>> main
 }
 
 .title-small {
@@ -136,25 +94,22 @@ body {
     display: block;
 }
 
-<<<<<<< HEAD
 p {
     margin: 0;
     padding: 0;
     font-size: 17px;
     line-height: 27px;
     color: #666;
-=======
-.title-big {
-    font-size: 35px;
-    line-height: 45px;
-    font-weight: 700;
-    color: #3f3a64;
 }
 
+.py-5 {
+    padding-bottom: 3rem;
+}
+
+/*! About */
 .corpAbout ul.service__list li a span.fa {
     color: #009f4d;
     margin-right: 5px;
->>>>>>> main
     opacity: .8;
 
 }
@@ -165,14 +120,28 @@ p {
     list-style-type: none;
 }
 
-<<<<<<< HEAD
-.py-5 {
-    padding-bottom: 3rem;
+.corpAbout ul.service__list li a {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+    margin-top: 25px;
+    display: block;
+    color: #3f3a64;
 }
 
-/*! About */
+.corpAbout ul.service__list li {
+    display: block;
+    margin-bottom: 15px;
+}
 
+.radius-image {
+    border-radius: 8px;
+}
 
+.col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
 
 /*! Features */
 
@@ -206,10 +175,6 @@ p {
 
 .box__wrap h4 a {
     font-size: 22px;
-=======
-.corpAbout ul.service__list li a {
-    font-size: 18px;
->>>>>>> main
     line-height: 28px;
     font-weight: 600;
     margin-top: 25px;
@@ -227,15 +192,6 @@ p {
     transition: all .5s;
 
 }
-<<<<<<< HEAD
-=======
-
-.corpAbout ul.service__list li {
-    display: block;
-    margin-bottom: 15px;
-}
-/*! Features */
->>>>>>> main
 
 .box__wrap {
     transform: translateY(0);
@@ -399,46 +355,50 @@ p {
     padding: 0 18px;
 }
 
-
-
-
 /*! Skills */
 
+@media (min-width: 768px) {
+    .container,
+    .container-sm,
+    .container-md {
+        max-width: 720px;
+    }
+} 
 
-
-
-
-
-@media (min-width: 768px) .container,
-.container-sm,
-.container-md {
-    max-width: 720px;
-}
-
-@media (min-width: 768px) .pb-md-4,
-.py-md-4 {
+@media (min-width: 768px) {
+    .pb-md-4,
+    .py-md-4 {
     padding-bottom: 1.5rem !important;
 }
+} 
 
-@media (min-width: 768px) .pt-md-4,
-.py-md-4 {
-    padding-top: 1.5rem !important;
-}
+@media (min-width: 768px) {
+    .pt-md-4,
+    .py-md-4 {
+        padding-top: 1.5rem !important;
+    }
+} 
 
-@media (min-width: 992px) .pr-lg-5,
-.px-lg-5,
-mt-lg-5 {
-    padding-right: 3rem !important;
-}
+@media (min-width: 992px) {
+    .pr-lg-5,
+    .px-lg-5,
+    .mt-lg-5 {
+        padding-right: 3rem !important;
+    }
+} 
 
-@media (min-width: 992px) .col-lg-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-}
+@media (min-width: 992px) {
+    .col-lg-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+} 
 
-@media (min-width: 1280px) .container {
-    max-width: 1200px;
-}
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1200px;
+    }
+} 
 
 @media (min-width: 576px) {
     .container {
@@ -458,7 +418,6 @@ mt-lg-5 {
     }
 }
 
-<<<<<<< HEAD
 @media (min-width: 1200px) {
     .container {
         max-width: 1140px;
@@ -469,10 +428,6 @@ mt-lg-5 {
     .container {
     max-width: 1200px;
     }
-}
-=======
-.container {
-    max-width: 1200px;
 }
 
 /* HEADER */
@@ -757,4 +712,3 @@ mt-lg-5 {
     50% {transform: translateX(-25%);}
     100% {transform: translateX(-50%);}
 } */
->>>>>>> main
