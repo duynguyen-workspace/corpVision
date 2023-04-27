@@ -33,6 +33,11 @@
     <link rel="stylesheet" href="./css/owlCarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/owlCarousel/owl.theme.default.min.css">
 
+    <!-- POP UP thư viện  -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"> -->
+
+    <link rel="stylesheet" href="./css/lightbox.min.css">
+
     <!-- Custom css -->
     <link rel="stylesheet" href="./css/style.css" />
 </head>
@@ -223,7 +228,7 @@
                         Discover More</a>
                 </div>
                 <div class="col-lg-6 feature-right mt-lg-0 mt-md-5 mt-4 justify-content-center">
-                    <div class="grids__item d-grid">
+                    <div class="Feat-item d-grid">
 
                         <div class="item box__wrap">
                             <div class="icon">
@@ -271,9 +276,9 @@
 
             <div class="row mt-lg-5 mt-4 text-center justify-content-center">
                 <div class="col-lg-4 col-md-6">
-                    <div class="services__item">
+                    <div class="services-item">
                         <a href="#url"><img src="./img/s1.jpg" alt="" class="img-fluid"></a>
-                        <div class="services__info">
+                        <div class="services-info">
                             <a href="#url" class="title">Work Expertise</a>
                             <p class="detail">Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit..</p>
                         </div>
@@ -281,9 +286,9 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mt-md-0 mt-5">
-                    <div class="services__item">
+                    <div class="services-item">
                         <a href="#url"><img src="./img/s2.jpg" alt="" class="img-fluid"></a>
-                        <div class="services__info">
+                        <div class="services-info">
                             <a href="#url" class="title">Product Development</a>
                             <p class="detail">Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit..</p>
                         </div>
@@ -291,9 +296,9 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mt-lg-0 mt-5">
-                    <div class="services__item">
+                    <div class="services-item">
                         <a href="#url"><img src="./img/s3.jpg" alt="" class="img-fluid"></a>
-                        <div class="services__info">
+                        <div class="services-info">
                             <a href="#url" class="title">Software Development</a>
                             <p class="detail">Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit..</p>
                         </div>
@@ -315,26 +320,20 @@
             </div>
 
             <div class="row">
-                <div class="col-lg-4 col-md-6 gal__item">
-                    <a href="./img/c1.jpg"
-                        data-lightbox="example-set" data-title="Project 1" class="zoom d-block">
-                        <img class="card-img-bottom d-block"
-                            src="./img/c1.jpg"
-                            alt="Card image cap">
-                        <span class="overlay__hover"></span>
+                <div class="col-lg-4 col-md-6 gal-item">
+                    <a href="./img/c1.jpg" data-lightbox="example-set" data-title="Project 1" class="zoom d-block">
+                        <img class="card-img-bottom d-block" src="./img/c1.jpg" alt="Card image cap">
+                        <span class="overlay-hover"></span>
                         <span class="hover-content">
                             <span class="title">Project 1</span>
                             <span class="content">Quisque ut lectus, eros et, sed commodo risus.</span>
                         </span>
                     </a>
                 </div>
-                <div class="col-lg-4 col-md-6 gal__item mt-md-0 mt-4">
-                    <a href="./img/c2.jpg"
-                        data-lightbox="example-set" data-title="Project 2" class="zoom d-block">
-                        <img class="card-img-bottom d-block"
-                            src="./img/c2.jpg"
-                            alt="Card image cap">
-                        <span class="overlay__hover"></span>
+                <div class="col-lg-4 col-md-6 gal-item mt-md-0 mt-4">
+                    <a href="./img/c2.jpg" data-lightbox="example-set" data-title="Project 2" class="zoom d-block">
+                        <img class="card-img-bottom d-block" src="./img/c2.jpg" alt="Card image cap">
+                        <span class="overlay-hover"></span>
                         <span class="hover-content">
                             <span class="title">Project 2</span>
                             <span class="content">Quisque ut lectus, eros et, sed commodo risus.</span>
@@ -342,13 +341,10 @@
                     </a>
                 </div>
 
-                <div class="col-lg-4 col-md-6 gal__item mt-lg-0 mt-4">
-                    <a href="./img/c3.jpg"
-                        data-lightbox="example-set" data-title="Project 3" class="zoom d-block">
-                        <img class="card-img-bottom d-block"
-                            src="./img/c3.jpg"
-                            alt="Card image cap">
-                        <span class="overlay__hover"></span>
+                <div class="col-lg-4 col-md-6 gal-item mt-lg-0 mt-4">
+                    <a href="./img/c3.jpg" data-lightbox="example-set" data-title="Project 3" class="zoom d-block">
+                        <img class="card-img-bottom d-block" src="./img/c3.jpg" alt="Card image cap">
+                        <span class="overlay-hover"></span>
                         <span class="hover-content">
                             <span class="title">Project 3</span>
                             <span class="content">Quisque ut lectus, eros et, sed commodo risus.</span>
@@ -356,13 +352,10 @@
                     </a>
                 </div>
 
-                <div class="col-lg-4 col-md-6 gal__item mt-4 pt-lg-2">
-                    <a href="./img/c4.jpg"
-                        data-lightbox="example-set" data-title="Project 4" class="zoom d-block">
-                        <img class="card-img-bottom d-block"
-                            src="./img/c4.jpg"
-                            alt="Card image cap">
-                        <span class="overlay__hover"></span>
+                <div class="col-lg-4 col-md-6 gal-item mt-4 pt-lg-2">
+                    <a href="./img/c4.jpg" data-lightbox="example-set" data-title="Project 4" class="zoom d-block">
+                        <img class="card-img-bottom d-block" src="./img/c4.jpg" alt="Card image cap">
+                        <span class="overlay-hover"></span>
                         <span class="hover-content">
                             <span class="title">Project 4</span>
                             <span class="content">Quisque ut lectus, eros et, sed commodo risus.</span>
@@ -370,13 +363,10 @@
                     </a>
                 </div>
 
-                <div class="col-lg-4 col-md-6 gal__item mt-4 pt-lg-2">
-                    <a href="./img/c5.jpg"
-                        data-lightbox="example-set" data-title="Project 5" class="zoom d-block">
-                        <img class="card-img-bottom d-block"
-                            src="./img/c5.jpg"
-                            alt="Card image cap">
-                        <span class="overlay__hover"></span>
+                <div class="col-lg-4 col-md-6 gal-item mt-4 pt-lg-2">
+                    <a href="./img/c5.jpg" data-lightbox="example-set" data-title="Project 5" class="zoom d-block">
+                        <img class="card-img-bottom d-block" src="./img/c5.jpg" alt="Card image cap">
+                        <span class="overlay-hover"></span>
                         <span class="hover-content">
                             <span class="title">Project 5</span>
                             <span class="content">Quisque ut lectus, eros et, sed commodo risus.</span>
@@ -384,13 +374,10 @@
                     </a>
                 </div>
 
-                <div class="col-lg-4 col-md-6 gal__item mt-4 pt-lg-2">
-                    <a href="./img/c6.jpg"
-                        data-lightbox="example-set" data-title="Project 6" class="zoom d-block">
-                        <img class="card-img-bottom d-block"
-                            src="./img/c6.jpg"
-                            alt="Card image cap">
-                        <span class="overlay__hover"></span>
+                <div class="col-lg-4 col-md-6 gal-item mt-4 pt-lg-2">
+                    <a href="./img/c6.jpg" data-lightbox="example-set" data-title="Project 6" class="zoom d-block">
+                        <img class="card-img-bottom d-block" src="./img/c6.jpg" alt="Card image cap">
+                        <span class="overlay-hover"></span>
                         <span class="hover-content">
                             <span class="title">Project 6</span>
                             <span class="content">Quisque ut lectus, eros et, sed commodo risus.</span>
@@ -400,26 +387,21 @@
             </div>
 
             <!-- Company logos -->
-            <div class="row company-logos pt-5 mt-5 justify-content-center ">
+            <div class="row company-logo pt-5 mt-5 justify-content-center ">
                 <div class="col-lg-2 col-md-3 col-4">
-                    <img src="./img/brand1.png"
-                        alt="" class="img-fluid">
+                    <img src="./img/brand1.png" alt="" class="img-fluid">
                 </div>
                 <div class="col-lg-2 col-md-3 col-4">
-                    <img src="./img/brand6.png"
-                        alt="" class="img-fluid">
+                    <img src="./img/brand6.png" alt="" class="img-fluid">
                 </div>
                 <div class="col-lg-2 col-md-3 col-4">
-                    <img src="./img/brand3.png"
-                        alt="" class="img-fluid">
+                    <img src="./img/brand3.png" alt="" class="img-fluid">
                 </div>
                 <div class="col-lg-2 col-md-3 col-4 mt-md-0 mt-4">
-                    <img src="./img/brand4.png"
-                        alt="" class="img-fluid">
+                    <img src="./img/brand4.png" alt="" class="img-fluid">
                 </div>
                 <div class="col-lg-2 col-md-3 col-4 mt-lg-0 mt-4">
-                    <img src="./img/brand5.png"
-                        alt="" class="img-fluid">
+                    <img src="./img/brand5.png" alt="" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -756,9 +738,10 @@
     </script>
     
     <!-- Bootstrap bundles and JQuery scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" ></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
@@ -781,6 +764,8 @@
             })
         })
     </script>
+    <!-- POP UP thư viện  -->
+    <script src="./js/lightbox.min.js"></script>
 </body>
 
 </html>
