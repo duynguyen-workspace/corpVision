@@ -719,3 +719,226 @@ p {
     max-width: 1200px;
     }
 }
+
+/* SKILLS */
+.corpSkills .skill__image {
+    height: auto;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.corpSkills .progress-info {
+    text-align: left;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.corpSkills .progress-info .progress-title h6 {
+    color: #3f3a64;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.corpSkills .progress-info .progress-title {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.corpSkills .progress-info.progress1 .progress-title {
+    width: 80%;
+}
+
+.corpSkills .progress-info.progress2 .progress-title {
+    width: 95%;
+}
+
+.corpSkills .progress-info.progress3 .progress-title {
+    width: 60%;
+}
+
+.corpSkills .progress-info.progress4 .progress-title {
+    width: 85%;
+}
+
+.corpSkills .progress-info .progress-bar::before {
+    height: 28px;
+    width: 28px;
+    border: 1px solid;
+    opacity: .3;
+}
+
+.corpSkills .progress-info .progress-bar::after {
+    height: 13px;
+    width: 13px;
+    border: 3px solid;
+    background-color: #fff;
+}
+
+.corpSkills .progress-info.progress1 .progress-bar.bar1 {
+    color: #61fded; 
+    background-color: #0d8abc;
+    background-image: linear-gradient(-224deg, #0d8abc, #61fded);
+    background-size: cover;
+}
+
+.corpSkills .progress-info.progress2 .progress-bar.bar2 {
+    color: #eece90;
+    background-color: #d45529;
+    background-image: linear-gradient(-224deg, #d45529, #eece90);
+    background-size: cover;
+}
+
+.corpSkills .progress-info.progress3 .progress-bar.bar3 {
+    color: #5c51ff;
+    background-color: #f646a9;
+    background-image: linear-gradient(-224deg, #f646a9, #5c51ff);
+    background-size: cover;
+}
+
+.corpSkills .progress-info.progress4 .progress-bar.bar4 {
+    color: #e5529a;
+    background-color: #e77654;
+    background-image: linear-gradient(-224deg, #e77654, #e5529a);
+    background-size: cover;
+}
+
+.corpSkills .progress-info.progress1 .progress-bar.bar1::before,
+.corpSkills .progress-info.progress1 .progress-bar.bar1::after {
+    content: "";
+    position: absolute;
+    right: 20%;
+    top: 90%;
+    border-radius: 50%;
+    transform: translate(50%, -50%)
+}
+
+.corpSkills .progress-info.progress2 .progress-bar.bar2::before,
+.corpSkills .progress-info.progress2 .progress-bar.bar2::after {
+    content: "";
+    position: absolute;
+    right: 5%;
+    top: 90%;
+    border-radius: 50%;
+    transform: translate(50%, -50%)
+}
+
+.corpSkills .progress-info.progress3 .progress-bar.bar3::before,
+.corpSkills .progress-info.progress3 .progress-bar.bar3::after {
+    content: "";
+    position: absolute;
+    right: 40%;
+    top: 90%;
+    border-radius: 50%;
+    transform: translate(50%, -50%)
+}
+
+.corpSkills .progress-info.progress4 .progress-bar.bar4::before,
+.corpSkills .progress-info.progress4 .progress-bar.bar4::after {
+    content: "";
+    position: absolute;
+    right: 15%;
+    top: 90%;
+    border-radius: 50%;
+    transform: translate(50%, -50%)
+}
+
+/* TESTIMONIAL */
+.corpTestimonials {
+    background-color: #f8f9fa;
+}
+
+.corpTestimonials .testimonial-content {
+    position: relative;
+    padding: 40px 30px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.corpTestimonials .testimonial-content .item {
+    padding: 0 0 40px 0;
+    background-color: #f8f9fa;
+}
+
+.corpTestimonials .testimonial-item p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #666;
+    opacity: .8;
+    margin-bottom: 1.5em;
+}
+
+.corpTestimonials .testimonial-data .avatar {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.corpTestimonials .testimonial-data .avatar img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.corpTestimonials .testimonial-data .info {
+    text-align: left;
+}
+
+.corpTestimonials .testimonial-data .info span {
+    color: #666;
+}
+
+.corpTestimonials .testimonial-data .info h5 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #3f3a64;
+}
+
+.corpTestimonials .owl-carousel.owl-theme .owl-dots {
+    margin-top: 30px;
+}
+
+.corpTestimonials .owl-carousel.owl-theme .owl-dots .owl-dot span{
+    background-color: #3f3a64;
+    opacity: 0.5;
+    transition: all 0.25s ease 0s;
+}
+
+.corpTestimonials .owl-carousel.owl-theme .owl-dots .owl-dot.active span,
+.corpTestimonials .owl-carousel.owl-theme .owl-dots .owl-dot:hover span {
+    opacity: 1;
+    transform: scale(1.5,1.5);
+}
+
+/* SCROLL UP BUTTON */
+#backToTop.backToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 35px;
+    background-color: #009f4d;
+    cursor: pointer;
+    z-index: 1000;
+    border: none;
+    outline: none;
+    transition: 0.3s ease-out;
+}
+
+#backToTop.backToTopBtn i {
+    font-size: 13px;
+    color: #fff;
+}
+
+
+
+
