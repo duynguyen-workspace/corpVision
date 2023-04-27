@@ -81,8 +81,6 @@ body {
     line-height: 45px;
     font-weight: 700;
     color: #3f3a64;
-    color: #666;
-    opacity: .8;
 }
 
 .title-small {
@@ -101,6 +99,7 @@ p {
     font-size: 17px;
     line-height: 27px;
     color: #666;
+    opacity: .8;
 }
 
 .py-5 {
