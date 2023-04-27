@@ -916,6 +916,22 @@ p {
     transform: scale(1.5,1.5);
 }
 
+/* NEWS */
+.corpNews .card .card-header {
+    border: none;
+}
+
+.corpNews .card-header .card-thumbnail {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    box-sizing: inherit;
+    overflow: hidden;
+}
+
+.corpNews .card-header .card-thumbnail .card-img-top {
+    width: 100%;
+}
+
 /* SCROLL UP BUTTON */
 #backToTop.backToTopBtn {
     position: fixed;
