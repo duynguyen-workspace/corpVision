@@ -99,6 +99,7 @@ p {
     font-size: 17px;
     line-height: 27px;
     color: #666;
+    opacity: .8;
 }
 
 .py-5 {
