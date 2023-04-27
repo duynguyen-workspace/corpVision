@@ -1122,6 +1122,12 @@ h6.skill-tittle {
     font-weight: 600;
     line-height: 28px;
     margin-top: 10px;
+    transition: all 0.3s;
+}
+
+.corpNews .card .card-body .card-title:hover {
+    color: #009f4d;
+    cursor: pointer;
 }
 
 .corpNews .card .card-footer {
@@ -1140,6 +1146,18 @@ h6.skill-tittle {
     font-size: 15px;
     font-weight: 600;
     opacity: 0.6;
+}
+
+.corpNews .card .card-footer .footer-content a {
+    text-decoration: none;
+    color: #3f3a64;
+    font-weight: 600;
+    line-height: 26px;
+    transition: all 0.3s;
+}
+
+.corpNews .card .card-footer .footer-content a:hover {
+    color: #009f4d;
 }
 
 .corpNews .card .card-footer .footer-date p {
