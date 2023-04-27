@@ -1021,6 +1021,7 @@ h6.skill-tittle {
 .corpTestimonials .testimonial-content .item {
     padding: 0 0 40px 0;
     background-color: #f8f9fa;
+    box-shadow: none;
 }
 
 .corpTestimonials .testimonial-item p {
