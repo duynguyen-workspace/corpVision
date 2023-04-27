@@ -12,19 +12,17 @@ var backTop = document.getElementById("backToTop");
 function changeHeader() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         header.classList.add("headerScroll");
-        backTop.classList.add("backToTopBtn");
     } else {
         header.classList.remove("headerScroll");
-        backTop.classList.remove("backToTopBtn");
     }
 }
 
 // Appear back to top button when scrolling
 function appearBackToTop() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        backTop.classList.add("backToTopBtn");
+        backTop.classList.add("show");
     } else {
-        backTop.classList.remove("backToTopBtn");
+        backTop.classList.remove("show");
     }
 }
 

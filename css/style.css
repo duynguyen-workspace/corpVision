@@ -15,6 +15,7 @@ html {
 body {
     height: 4000px;
     font-family: 'Jost', sans-serif;
+    background-color: #fff;
 }
 
 /* Universal Classes */
@@ -618,6 +619,34 @@ p {
     margin-top: 30px;
 }
 
+.shape {
+    z-index: 1000;
+    height: 150px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.wave {
+    background: url(../img/wave.svg);
+    /* background-color: white; */
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    animation: wave 20s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+}
+
+@keyframes wave {
+    0% {transform: translateX(0);}
+    50% {transform: translateX(-25%);}
+    100% {transform: translateX(-50%);}
+}
+
+
 /* .shape {
     height: 150px;
     position: absolute;
@@ -721,6 +750,10 @@ p {
 }
 
 /* SKILLS */
+.corpSkills .skill-content {
+    padding: 20px 0 0 20px;
+}
+
 .corpSkills .skill__image {
     height: auto;
     max-width: 100%;
@@ -917,6 +950,12 @@ p {
 }
 
 /* NEWS */
+.corpNews .card {
+    background: none;
+    border: 1px solid transparent;
+    box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.04);
+}
+
 .corpNews .card .card-header {
     border: none;
 }
@@ -930,7 +969,115 @@ p {
 
 .corpNews .card-header .card-thumbnail .card-img-top {
     width: 100%;
+    object-fit: cover;
+    transition: 0.3s ease-in-out;
 }
+
+.corpNews .card:hover .card-header .card-thumbnail .card-img-top {
+    transform: scale(1.1);
+}
+
+.corpNews .card .card-body .card-text {
+    color: #999;
+    font-size: 17px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.corpNews .card .card-body .card-title {
+    color: #3f3a64;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    margin-top: 10px;
+}
+
+.corpNews .card .card-footer {
+    background: #fff;
+    border-top: 1px solid #eee;
+}
+
+.corpNews .card .card-footer .card-author {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 10px;
+}
+
+.corpNews .card .card-footer .footer-content span {
+    color: #666;
+    font-size: 15px;
+    font-weight: 600;
+    opacity: 0.6;
+}
+
+.corpNews .card .card-footer .footer-date p {
+    font-size: 15px;
+}
+
+/* SUBSCRIBE */
+.corpSubscribe {
+    background-image: url(../img/map.png);
+    background-color: #151421;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+}
+
+.corpSubscribe .subscribe-header h3 {
+    font-size: 35px;
+    line-height: 45px;
+    font-weight: 700;
+}
+
+.corpSubscribe .subscribe-header p {
+    color: #eee;
+}
+
+.corpSubscribe .subscribe-form .input-group-prepend {
+    border-color: rgba(255, 255, 255, 0.15);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.corpSubscribe .subscribe-form .input-group-text {
+    color: #999;
+    padding: 0 15px;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-color: rgba(255, 255, 255, 0.15);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    
+}
+
+.corpSubscribe .subscribe-form .input-group-text i {
+    display: inline-block;
+}
+
+.corpSubscribe .subscribe-form .input-group input[type="email"] {
+    color: #999;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 33%;
+    padding: 14px 20px;
+    font-size: 16px;
+    line-height: 28px;
+    border-radius: 0;
+    border: 1px solid #eee;
+    border-color: rgba(255, 255, 255, 0.15);
+    border-left: none;
+    outline: none;
+}
+
+.corpSubscribe .subscribe-form .input-group-append .btn {
+    padding: 0 25px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    font-size: 16px;
+}
+
+/* FOOTER */
+
 
 /* SCROLL UP BUTTON */
 #backToTop.backToTopBtn {
@@ -948,11 +1095,18 @@ p {
     border: none;
     outline: none;
     transition: 0.3s ease-out;
+    visibility: hidden;
+    opacity: 0;
 }
 
 #backToTop.backToTopBtn i {
     font-size: 13px;
     color: #fff;
+}
+
+#backToTop.backToTopBtn.show {
+    visibility: visible;
+    opacity: 1;
 }
 
 
