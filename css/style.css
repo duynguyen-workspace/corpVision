@@ -1415,6 +1415,10 @@ h6.skill-tittle {
     color: #eee;
 }
 
+.dark#corpBody .shape path {
+    fill: #151421;
+}
+
 .dark#corpBody .corpAbout ul.service__list li a {
     color: #eee;
 }
