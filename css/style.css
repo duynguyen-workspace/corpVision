@@ -1598,7 +1598,10 @@ h6.skill-tittle {
     #carouselWrapper .overlay__content h1 {
         font-size: 50px;
     }
-
+    .corpFooter .footer-col h5 {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
     
 }
 
@@ -1643,6 +1646,9 @@ h6.skill-tittle {
         font-size: 24px !important;
         line-height: 30px;
     } 
+    .navbar-brand {
+        font-size: 26px;
+    }
     #carouselWrapper .overlay__content h1 {
         font-size: 27px;
     }
@@ -1653,6 +1659,9 @@ h6.skill-tittle {
     .box-wrap h4 a {
         font-size: 18px;
         margin-top: 15px;
+    }
+    .corpFooter .footer-col-1 .navbar-brand p {
+        font-size: 26px;
     }
 }
 
