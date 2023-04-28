@@ -465,6 +465,7 @@ p {
 
 .shape path {
     fill: #fff;
+    transition: all 0.5s;
 }
 
 svg {
