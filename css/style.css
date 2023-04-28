@@ -1363,11 +1363,14 @@ h6.skill-tittle {
 }
 
 /*? DARK THEME */
-.dark#corpBody,
+.dark#corpBody {
+    background-color: #151421;
+}
+
 .dark #features,
 .dark #gallery,
 .dark #testimonials{
-    background-color: #000000;
+    background-color: #100f19;
 }
 
 .dark #switchButton .gg-moon {
@@ -1384,7 +1387,7 @@ h6.skill-tittle {
 }
 
 .dark#corpBody #corpHeader.headerScroll {
-    background-color: #000000;
+    background-color: #151421;
 }
 
 .dark#corpBody #corpHeader.headerScroll a.corpNavbar__logo {
@@ -1400,12 +1403,12 @@ h6.skill-tittle {
 }
 
 .dark#corpBody #corpHeader.headerScroll #corpNavbar .nav-drop{
-    background-color: #000000;
-    border-color: #000000;
+    background-color: #151421;
+    border-color: #151421;
 }
 
 .dark#corpBody #corpHeader.headerScroll #corpNavbar .nav-drop::before {
-    background-color: #000000;
+    background-color: #151421;
 }
 
 .dark#corpBody #corpHeader.headerScroll #corpNavbar .nav-drop .dropdown-item{
@@ -1421,7 +1424,7 @@ h6.skill-tittle {
 }
 
 .dark#corpBody .corpFeatures .Feat-item .box-wrap {
-    background-color: #000000;
+    background-color: #151421;
 }
 
 .dark#corpBody .corpFeatures .box-wrap h4 a {
@@ -1429,7 +1432,7 @@ h6.skill-tittle {
 }
 
 .dark#corpBody .corpServices .services-info a.title {
-    background-color: #000000;
+    background-color: #151421;
     color: #eee;
 }
 
@@ -1451,7 +1454,7 @@ h6.skill-tittle {
 }
 
 .dark#corpBody .corpTestimonials .testimonial-content .item {
-    background-color: #000000;
+    background-color: #100f19;
 }
 
 .dark#corpBody .corpTestimonials .testimonial-data .info h5 {
@@ -1463,13 +1466,17 @@ h6.skill-tittle {
     color: #c2c2c2;
 }
 
+.dark#corpBody .corpTestimonials .owl-carousel.owl-theme .owl-dots .owl-dot span {
+    background-color: #213364;
+}
+
 .dark#corpBody .corpNews .card .card-body .card-title,
 .dark#corpBody .corpNews .card .card-footer .footer-content a {
     color: #eee;
 }
 
 .dark#corpBody .corpNews .card .card-footer {
-    background-color: #000000;
+    background-color: #151421;
     border-top-color: rgba(255, 255, 255, 0.1);
 }
 
