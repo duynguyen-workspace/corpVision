@@ -50,10 +50,10 @@
                     <i class="fa fa-align-right text-success mr-1"></i>Corp Vision
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#corpNavbar"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    aria-controls="corpNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
                 </button>
-
                 <div class="collapse navbar-collapse" id="corpNavbar">
                     <ul class="navbar-nav mr-auto mx-lg-auto">
                         <li class="nav-item active">
@@ -79,31 +79,35 @@
                             <a class="nav-link" href="#Contact">Contact</a>
                         </li>
                     </ul>
-                    <button class="corpSearchBtn mr-3">
-                        <i class="fa fa-search icon-material-search"></i>
-                    </button>
+                    <div class="header-search mr-3" id="headerSearch">
+                        <div class="search-wrapper" id="searchWrapper">
+                            <button id="corpSearch" class="corpSearchBtn mr-3" onclick="appearForm()">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                        <!-- Full screen form control -->
+                        <button id="closeSearch" class="closing-icon" onclick="closeForm()">
+                            <i class="fa fa-close"></i>
+                        </button>
+                        <form action="" method="GET" class="search-box" id="searchBox">
+                            <input type="text" class="search-input text-white" name="s" placeholder="Start Typing">
+                        </form>
+                    </div>
                     <button class="corpThemeBtn" id="switchButton">
                         <i class="gg-moon"></i>
                         <i class="gg-sun"></i>
                         <!-- <i class="far fa-sun"></i> -->
                     </button>
                 </div>
-                <!-- Search
-                <div class="corpSearch">
-                    <i class="icon-close fa fa-close material-icons"></i>
-                    <form action="" method="GET" class="corpSearch__form">
-                        <input class="corpSearch__input" type="text" placeholder="Start Typing">
-                    </form>
-                </div> -->
+                
             </nav>
         </div>
     </header>
 
     <!-- Carousel -->
-    <section class="corpCarousel">
-        <div id="carouselCorp" class="carousel slide carousel-fade" data-ride="carousel">
+    <section class="corpCarousel" id="corpCarousel">
+        <div id="carouselWrapper" class="carousel slide carousel-fade" data-ride="carousel">
             <div class="carousel-inner">
-                
                 <div class="carousel-item active">
                     <div class="carousel__overlay">
                         <div class="container">
@@ -148,30 +152,22 @@
                         </div>
                     </div>
                 </div>
-                
             </div>
-            <button class="carousel-control-prev" type="button" data-target="#carouselCorp"
-                data-slide="prev">
-                    <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
-            </button>
-            <button class="carousel-control-next" type="button" data-target="#carouselCorp"
-                data-slide="next">
-                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-            </button>
+            <!-- control buttons -->
+            <a class="carousel-control-prev arrow" type="button" data-target="#carouselWrapper" data-slide="prev">
+                <span class="fa-solid fa-arrow-left" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next arrow" type="button" data-target="#carouselWrapper" data-slide="next">
+                <span class="fa-solid fa-arrow-right" aria-hidden="true"></span>
+            </a>
         </div>
         <div class="shape">
-            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280">
-                <path fill-opacity="1">
-                <animate attributeName="d" dur="20000ms" repeatCount="indefinite" values="M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z; M0,160L48,181.3C96,203,192,245,288,234.7C384,224,480,160,576,133.3C672,107,768,117,864,138.7C960,160,1056,192,1152,197.3C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;												 M0,64L48,74.7C96,85,192,107,288,133.3C384,160,480,192,576,170.7C672,149,768,75,864,80C960,85,1056,171,1152,181.3C1248,192,1344,128,1392,96L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;
-                    M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;"></animate>
-                </path>
-            </svg> -->
-            <!-- <div class="wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280">
                 <path fill-opacity="1">
                     <animate attributeName="d" dur="20000ms" repeatCount="indefinite" values="M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z; M0,160L48,181.3C96,203,192,245,288,234.7C384,224,480,160,576,133.3C672,107,768,117,864,138.7C960,160,1056,192,1152,197.3C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;												 M0,64L48,74.7C96,85,192,107,288,133.3C384,160,480,192,576,170.7C672,149,768,75,864,80C960,85,1056,171,1152,181.3C1248,192,1344,128,1392,96L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;
                     M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;"></animate>
                 </path>
-            </div> -->
+            </svg>
         </div>
     </section>
 
@@ -727,6 +723,9 @@
     <button id="backToTop" class="backToTopBtn" onclick="scrollUp()">
         <i class="fa fa-angle-up"></i>
     </button>
+
+    <!-- Appear search form button -->
+    <script src="./js/appearSearchForm.js"></script>
 
     <!-- Back to Top button and Header on scroll script -->
     <script src="./js/scrollFeature.js"></script>
