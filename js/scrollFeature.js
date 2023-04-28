@@ -32,6 +32,7 @@ function scrollUp() {
     document.documentElement.scrollTop = 0;
 };
 
+// Change header background when navbar is toggle (for device with width <= 981px)
 function changeBackground() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         header.classList.toggle("active-scroll");
