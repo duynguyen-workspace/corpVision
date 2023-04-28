@@ -15,7 +15,7 @@ function changeHeader() {
     } else {
         header.classList.remove("headerScroll");
     }
-}
+};
 
 // Appear back to top button when scrolling
 function appearBackToTop() {
@@ -24,10 +24,18 @@ function appearBackToTop() {
     } else {
         backTop.classList.remove("show");
     }
-}
+};
 
 // Scroll up to the beginning if click on the scroll up button
 function scrollUp() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
+};
+
+function changeBackground() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        header.classList.toggle("active-scroll");
+    } else {
+        header.classList.toggle("active");
+    }
 };

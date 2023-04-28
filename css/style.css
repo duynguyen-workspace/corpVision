@@ -173,19 +173,19 @@ p {
     line-height: 34px;
 }
 
-.corpHeader button.navbar-toggler.collapsed .icon-expand {
+.corpHeader button.navbar-toggler .icon-expand {
     display: none;
 }
 
-.corpHeader button.navbar-toggler .icon-expand {
+.corpHeader button.navbar-toggler .icon-close{
+    display: block;
+}
+
+.corpHeader button.navbar-toggler.collapsed .icon-expand {
     display: block;
 }
 
 .corpHeader button.navbar-toggler.collapsed .icon-close{
-    display: block;
-}
-
-.corpHeader button.navbar-toggler .icon-close{
     display: none;
 }
 
@@ -375,7 +375,7 @@ p {
     top: auto;
     right: 25px !important;
     left: auto;
-    z-index: 200;
+    z-index: 20;
     opacity: 1;
 }
 
@@ -1501,6 +1501,56 @@ h6.skill-tittle {
         line-height: 40px;
     } 
 
+    #corpHeader {
+        height: auto;
+        background-color: none;
+    }
+    #corpHeader.active {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    #corpHeader.active-scroll {
+        background-color: #fff;
+    }
+
+    #corpHeader.headerScroll {
+        height: auto !important;
+    }
+
+    .corpHeader .container {
+        /* position: absolute; */
+        padding: 0 40px;
+        transition: all 0.7s;
+    }
+
+    .header-search .closing-icon {
+        right: 50px;
+        z-index: 200;
+    }
+    .corpThemeBtn {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+    }
+
+    .corpSearch,
+    .search-wrapper {
+        position: absolute;
+        top: 15px;
+        right: 94px;
+    }
+
+    .search-box {
+        top: 10%;
+        left: -30%;
+    }
+
+    .search-box input[type="text"] {
+        position: absolute;
+        right: -50%;
+        width: initial;
+    }
+
     .navbar-toggler-icon {
         background-image: none !important;
         padding: 0;
@@ -1545,6 +1595,10 @@ h6.skill-tittle {
 
 /* TABLET */
 @media only screen and (max-width: 768px) {
+    .corpHeader {
+        padding: 0 30px;
+    }
+
     #carouselWrapper .carousel-item {
         min-height: 650px;
         padding-bottom: 40px;
@@ -1565,6 +1619,9 @@ h6.skill-tittle {
         font-size: 30px !important;
         line-height: 38px;
     } 
+    .corpHeader {
+        padding: 0;
+    }
     
     #carouselWrapper .carousel-item {
         min-height: 550px;
