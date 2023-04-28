@@ -845,80 +845,6 @@ h6.skill-tittle {
     background-color: #fff
 }
 
-
-@media (min-width: 768px) {
-    .container,
-    .container-sm,
-    .container-md {
-        max-width: 720px;
-    }
-} 
-
-@media (min-width: 768px) {
-    .pb-md-4,
-    .py-md-4 {
-    padding-bottom: 1.5rem !important;
-}
-} 
-
-@media (min-width: 768px) {
-    .pt-md-4,
-    .py-md-4 {
-        padding-top: 1.5rem !important;
-    }
-} 
-
-@media (min-width: 992px) {
-    .pr-lg-5,
-    .px-lg-5,
-    .mt-lg-5 {
-        padding-right: 3rem !important;
-    }
-} 
-
-@media (min-width: 992px) {
-    .col-lg-6 {
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
-} 
-
-@media (min-width: 1280px) {
-    .container {
-        max-width: 1200px;
-    }
-} 
-
-@media (min-width: 576px) {
-    .container {
-        max-width: 540px;
-    }
-}
-
-@media (min-width: 768px) {
-    .container {
-        max-width: 720px;
-    }
-}
-
-@media (min-width: 992px) {
-    .container {
-        max-width: 960px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .container {
-        max-width: 1140px;
-    }
-}
-
-@media (min-width: 1280px) {
-    .container {
-    max-width: 1200px;
-    }
-}
-
 /* SKILLS */
 .corpSkills .skill-content {
     padding: 20px 0 0 20px;
@@ -1551,9 +1477,6 @@ h6.skill-tittle {
 
 /* LAPTOP-M*/
 @media only screen and (max-width: 1280px) {
-    .title h2 {
-        
-    }
     #carouselWrapper .overlay__content h1 {
         font-size: 55px;
     } 
@@ -1602,15 +1525,14 @@ h6.skill-tittle {
         margin-bottom: 20px;
         font-size: 20px;
     }
-    
+    .container {
+        max-width: 960px;
+    }
 }
 
 
 /* TABLET */
 @media only screen and (max-width: 768px) {
-    .title h2 {
-        
-    } 
     #carouselWrapper .carousel-item {
         min-height: 650px;
         padding-bottom: 40px;
@@ -1618,7 +1540,11 @@ h6.skill-tittle {
     #carouselWrapper .overlay__content h1 {
         font-size: 45px;
     }
-    
+    .container,
+    .container-sm,
+    .container-md {
+        max-width: 720px;
+    }
 }
 
 /* MOBILE-L */
@@ -1637,7 +1563,9 @@ h6.skill-tittle {
     .box-wrap h4 a {
         margin-bottom: 7px;
     }
-
+    .container {
+        max-width: 540px;
+    }
 }
 
 /* MOBILE-M */
@@ -1664,7 +1592,6 @@ h6.skill-tittle {
         font-size: 26px;
     }
 }
-
 
 
 
