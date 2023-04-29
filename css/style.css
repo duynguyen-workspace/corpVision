@@ -1170,6 +1170,11 @@ h6.skill-tittle {
     background-color: rgba(0, 0, 0, 0.25);
 }
 
+.corpSubscribe .subscribe-form .input-group {
+    width: 100%;
+    justify-content: center;
+}
+
 .corpSubscribe .subscribe-form .input-group-text {
     color: #999;
     padding: 0 15px;
@@ -1177,7 +1182,7 @@ h6.skill-tittle {
     border-color: rgba(255, 255, 255, 0.15);
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-    
+    width: 50px;
 }
 
 .corpSubscribe .subscribe-form .input-group-text i {
@@ -1185,6 +1190,7 @@ h6.skill-tittle {
 }
 
 .corpSubscribe .subscribe-form .input-group input[type="email"] {
+    margin: 0;
     color: #999;
     background-color: rgba(0, 0, 0, 0.2);
     width: 33%;
@@ -1641,6 +1647,12 @@ h6.skill-tittle {
     .container {
         max-width: 540px;
     }
+    .corpSubscribe .subscribe-form .input-group-text i {
+        text-align: center;
+    }
+    .corpSubscribe .subscribe-form .input-group input[type="email"] {
+        width: 50%;
+    }
 }
 
 /* MOBILE-M */
@@ -1669,6 +1681,12 @@ h6.skill-tittle {
     }
     .corpFooter .footer-col-1 .navbar-brand p {
         font-size: 26px;
+    }
+    .corpSubscribe .subscribe-form .input-group-prepend {
+        width: 42px;
+    }
+    .corpSubscribe .subscribe-form .input-group-text {
+        padding: 0 12px;
     }
 }
 
