@@ -32,11 +32,15 @@ function scrollUp() {
     document.documentElement.scrollTop = 0;
 };
 
-// Change header background when navbar is toggle (for device with width <= 981px)
-function changeBackground() {
+// Navbar toggle function (for device with width <= 981px)
+function toggleNavbar() {
+    var body = document.getElementById("corpBody");
+    // Change background color
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         header.classList.toggle("active-scroll");
     } else {
         header.classList.toggle("active");
     }
+    // Disable scrolling when navbar responsive expand
+    body.classList.toggle("disable-scroll");
 };

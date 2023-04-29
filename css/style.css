@@ -73,6 +73,11 @@ p {
     border-radius: 8px;
 }
 
+#corpBody.disable-scroll {
+    height: 100%;
+    overflow-y: hidden;
+}
+
 /** HEADER */
 .corpHeader {
     height: 100px;
@@ -173,19 +178,19 @@ p {
     line-height: 34px;
 }
 
-.corpHeader button.navbar-toggler .icon-expand {
+button.navbar-toggler .icon-expand {
     display: none;
 }
 
-.corpHeader button.navbar-toggler .icon-close{
+button.navbar-toggler.collapsed .icon-expand {
     display: block;
 }
 
-.corpHeader button.navbar-toggler.collapsed .icon-expand {
+button.navbar-toggler .icon-close{
     display: block;
 }
 
-.corpHeader button.navbar-toggler.collapsed .icon-close{
+button.navbar-toggler.collapsed .icon-close{
     display: none;
 }
 
@@ -315,7 +320,7 @@ p {
     height: 80px;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
     border-bottom: none;
-    background-color: #ffffff;
+    background-color: #fff;
 }
 
 #corpHeader.headerScroll .corpNavbar__logo {
@@ -1515,6 +1520,7 @@ h6.skill-tittle {
 
     #corpHeader.headerScroll {
         height: auto !important;
+
     }
 
     .corpHeader .container {
@@ -1595,8 +1601,8 @@ h6.skill-tittle {
 
 /* TABLET */
 @media only screen and (max-width: 768px) {
-    .corpHeader {
-        padding: 0 30px;
+    .corpHeader .container{
+        padding: 0 25px;
     }
 
     #carouselWrapper .carousel-item {
@@ -1619,8 +1625,8 @@ h6.skill-tittle {
         font-size: 30px !important;
         line-height: 38px;
     } 
-    .corpHeader {
-        padding: 0;
+    .corpHeader .container {
+        padding: 0 15px;
     }
     
     #carouselWrapper .carousel-item {
@@ -1646,6 +1652,10 @@ h6.skill-tittle {
     .navbar-brand {
         font-size: 26px;
     }
+    .corpNavbar__logo::after {
+        padding-left: 40px;
+    }
+
     #carouselWrapper .overlay__content h1 {
         font-size: 27px;
     }
