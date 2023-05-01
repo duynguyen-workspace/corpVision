@@ -1503,6 +1503,9 @@ h6.skill-tittle {
     #carouselWrapper .overlay__content h1 {
         font-size: 55px;
     } 
+    .container {
+        max-width: 1140px;
+    }
 }
 
 /* LAPTOP-S */
@@ -1644,14 +1647,14 @@ h6.skill-tittle {
     .box-wrap h4 a {
         margin-bottom: 7px;
     }
-    .container {
-        max-width: 540px;
-    }
     .corpSubscribe .subscribe-form .input-group-text i {
         text-align: center;
     }
     .corpSubscribe .subscribe-form .input-group input[type="email"] {
         width: 50%;
+    }
+    .container {
+        max-width: 540px;
     }
 }
 
